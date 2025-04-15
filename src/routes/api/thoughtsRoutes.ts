@@ -16,7 +16,7 @@ router.route('/').get(getAllThoughts).post(createThought);
 router.route('/:ThoughtId').get(getThoughtById).delete(deleteThought);
 
 // /api/students/:studentId/assignments
-router.route('/:studentId/assignments').post(addAssignment);
+router.route('/:thoughtId/assignments').post(addAssignment);
 
 // /api/students/:studentId/assignments/:assignmentId
 router.route('/:thoughtId/assignments/:assignmentId').delete(removeAssignment);
