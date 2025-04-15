@@ -44,11 +44,13 @@ export const getUserById = async (req: Request, res: Response) => {
  * @param object username
  * @returns a single Course object
  */
+//username
+//email
 export const createUser = async (req: Request, res: Response) => {
-  const { user } = req.body;
+  const { username, email } = req.body;
   try {
     const newUser = await User.create({
-      user,
+      username, email
     });
     res.status(201).json(newUser);
   } catch (error: any) {

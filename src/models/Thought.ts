@@ -1,4 +1,4 @@
-import { Schema, Types, model, type Document } from "mongoose";
+import { Schema, Types, model } from "mongoose";
 
 const reactionSchema = new Schema(
   {
@@ -37,6 +37,12 @@ const thoughtSchema = new Schema(
       type: Date,
       required: true,
       default: Date.now(),
+      get: function(value:any){
+        const date = new Date(value);
+
+return date.toLocaleString()
+
+      }
     },
     username: {
       type: String,
