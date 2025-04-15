@@ -62,7 +62,7 @@ Example payloads are available in the challenge instructions, or you can test cu
 
 ## Walkthrough Video
 
-[Watch the EchoAPI Demo](https://your-demo-video-link.com)
+[Watch the EchoAPI Demo](https://drive.google.com/file/d/1bOxEZSDIpL0JubA2kMeRu64A4TWl-YpZ/view?usp=sharing)
 
 The video includes:
 - Starting the Express server
